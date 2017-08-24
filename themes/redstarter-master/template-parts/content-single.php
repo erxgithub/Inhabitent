@@ -15,9 +15,13 @@ if (get_post_type() == "adventures") {
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
- 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+		<?php
+			if (get_post_type() == 'post') {
+ 				if ( has_post_thumbnail() ) {
+					the_post_thumbnail( 'large' );
+ 				}
+			}
+		?>
  
 		<!-- <?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?> -->
 		<h1 style="font-size: 3rem;"><?php echo strtoupper(get_the_title()); ?></h1>

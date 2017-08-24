@@ -151,7 +151,7 @@ endwhile;
 <div style="padding-bottom: 3rem;">
 	<a href="" style="text-decoration: none;">
 		<div class="more-adventures" style="background-color: rgb(45, 134, 112); text-align: center; margin: 2rem 0 2rem 5rem; width: 20%; padding: 1rem 0 1rem 0;">
-			<a href="" style="font-size: 1.5rem;">MORE ADVENTURES</a>
+			<a href="<?php echo get_post_type_archive_link( 'adventures' ); ?>" style="font-size: 1.5rem;">MORE ADVENTURES</a>
 		</div>
 	</a>
 </div>

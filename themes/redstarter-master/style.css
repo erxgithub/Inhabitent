@@ -557,19 +557,6 @@ a {
 .footer-widget .widget_media_image img {
   width: 30rem; }
 
-.dot-leader li {
-  display: table-row;
-  width: 15rem; }
-
-.dot-leader li span {
-  display: table-cell; }
-
-.dots {
-  min-width: 10rem;
-  position: relative;
-  bottom: 4px;
-  border-bottom: 1px dotted #777; }
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

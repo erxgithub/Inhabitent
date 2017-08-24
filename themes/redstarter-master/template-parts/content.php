@@ -4,6 +4,8 @@
  *
  * @package RED_Starter_Theme
  */
+echo "content.php".nl2br("\n");
+echo get_post_type().nl2br("\n");
 
 ?>
 
@@ -17,9 +19,7 @@
 				?>
 			</div>
 			<div class="read-entry" style="border-style: solid; border-width: 6px 1px 1px 1px; border-color: lightgrey; margin: 0 1% 0 1%; padding: 0 1rem 2rem 1rem;">
-				<ul class="dot-leader">
-					<li><span><?php the_title(); ?></span><span class="dots">&nbsp;</span><span><?php echo '$'.number_format(get_field('price'), 2, '.', ','); ?></span></li>
-				</ul>
+				<p><span><?php echo str_pad(get_the_title(), 20, '.'); ?></span><span><?php echo '$'.number_format(get_field('price'), 2, '.', ','); ?></span></p>
 			</div>
 
 

@@ -88,6 +88,11 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
+
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/build/js/script.min.js', array(), '20170824', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -238,14 +243,25 @@ function theme_slug_widgets_init() {
 
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
 
+function fb_add_search_box ( $items, $args ) {
+	
+	// only on primary menu
+	if( 'primary' === $args -> theme_location )
+		$items .= '<li class="menu-item menu-item-search">' . get_search_form( FALSE ) . '</li>';
+	
+	return $items;
+}
+
+add_filter( 'wp_nav_menu_items', 'fb_add_search_box', 10, 2 );
+
 function get_banner() {
-	if (is_home()) {
+	if (is_front_page()) {
 		return 'class="banner-image-on" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('.get_bloginfo("url").'/wp-content/uploads/2017/08/home-hero.jpg'.') no-repeat center top; background-size: cover;"';
 	}
 	// elseif (is_page('about')) {
 	// 	return 'class="banner-image-on" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('.get_bloginfo("url").'/wp-content/uploads/2017/08/about-hero.jpg'.') no-repeat center bottom; background-size: cover;"';
 	// }
-	else if(get_field("banner")){
+	else if(get_field("banner") && !is_post_type_archive( 'adventures' )) {
 		if (is_page('about')) {
 			return 'class="banner-image-on" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('.get_field("banner").') no-repeat center bottom; background-size: cover;"';
 		}
@@ -261,7 +277,7 @@ function get_banner() {
 }
 
 function get_banner_logo() {
-	if (is_home()) {
+	if (is_front_page()) {
 		// return '<img src="'.get_bloginfo('template_url').'/assets/images/inhabitent-logo-full.svg'.'" style="width: 22rem; padding: 15rem 0 15rem 0;" />';
 		return '<img src="'.get_bloginfo('template_url').'/assets/images/inhabitent-logo-full.svg'.'" style="width: 22rem;" />';
 	}
@@ -275,7 +291,7 @@ function get_banner_logo() {
 }
 
 function get_banner_tent() {
-	if (is_home() || get_field("banner")) {
+	if (is_front_page() || (get_field("banner") && !is_post_type_archive( 'adventures' ))) {
 		return '<img src="'.get_bloginfo('template_url').'/assets/images/inhabitent-logo-tent-white.svg'.'" style="width: 4rem; padding: 0 0 47rem 0;"/>';
 	}
 	else

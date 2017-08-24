@@ -46,3 +46,10 @@ include_once( RF_DIR . '/lib/functions/post-types.php' );
  * @since 1.0.0
  */
 include_once( RF_DIR . '/lib/functions/taxonomies.php' );
+
+/**
+ * Register
+ *
+ * @since 1.0.0
+ */
+include_once( RF_DIR . '/lib/functions/register.php' );

@@ -17,7 +17,9 @@
 				?>
 			</div>
 			<div class="read-entry" style="border-style: solid; border-width: 6px 1px 1px 1px; border-color: lightgrey; margin: 0 1% 0 1%; padding: 0 1rem 2rem 1rem;">
-				<p style="font-size: 1.5rem; margin: 0; padding: 0 0 2rem 0;"><?php the_title(); echo '$'.get_field('price'); ?></p>
+				<ul class="dot-leader">
+					<li><span><?php the_title(); ?></span><span class="dots">&nbsp;</span><span><?php echo '$'.number_format(get_field('price'), 2, '.', ','); ?></span></li>
+				</ul>
 			</div>
 
 

@@ -640,9 +640,6 @@ a {
 .sticky {
   display: block; }
 
-.hentry {
-  margin: 0 0 1.5rem; }
-
 .updated:not(.published) {
   display: none; }
 

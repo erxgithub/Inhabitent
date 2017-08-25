@@ -11,6 +11,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+
+				<a href="<?php the_permalink(); ?>">
 			<div style="margin: 0 1% 0 1%;">
 				<?php
 				if ( has_post_thumbnail() ) {
@@ -18,9 +20,10 @@
 				}
 				?>
 			</div>
-			<div class="read-entry" style="border-style: solid; border-width: 6px 1px 1px 1px; border-color: lightgrey; margin: 0 1% 0 1%; padding: 0 1rem 2rem 1rem;">
+			<div class="read-entry" style="border-style: solid; border-width: 6px 1px 1px 1px; border-color: lightgrey; margin: 0 1% 0 1%; padding: 0 1rem 0 1rem; font-size: 1.25rem; position: relative; top: -0.5rem;">
 				<p><span><?php echo str_pad(get_the_title(), 20, '.'); ?></span><span><?php echo '$'.number_format(get_field('price'), 2, '.', ','); ?></span></p>
 			</div>
+				</a>
 
 
 

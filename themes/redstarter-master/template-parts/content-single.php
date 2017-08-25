@@ -16,7 +16,7 @@ if (get_post_type() == "adventures") {
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-			if (get_post_type() == 'post') {
+			if (get_post_type() == 'post' || get_post_type() == 'products') {
  				if ( has_post_thumbnail() ) {
 					the_post_thumbnail( 'large' );
  				}

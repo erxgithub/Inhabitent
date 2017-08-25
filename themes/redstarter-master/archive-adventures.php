@@ -4,8 +4,8 @@
  *
  * @package RED_Starter_Theme
  */
-//echo "archive.php".nl2br("\n");
-//echo get_post_type().nl2br("\n");
+echo "archive-adventures.php".nl2br("\n");
+echo get_post_type().nl2br("\n");
 
 get_header(); ?>
 
@@ -15,16 +15,12 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header" style="text-align: center;">
-				<p style="font-size: 3rem;"><b><?php echo str_replace(": ","",get_the_archive_title()); ?></b></p>
-					<!-- the_archive_title(); -->
-				<div style="font-size: 1.25rem;">
-					<?php the_archive_description(); ?>
-				</div>
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+				<h1>SHOP STUFF</h1>
 			</header><!-- .page-header -->
-
-	<div style="border-bottom-style: dashed; border-bottom-width: 1px; border-color: lightgrey; margin: 3rem 6rem 4rem 6rem;">
-	</div>
-
 		<div class="flex flex-wrap" style="width: 100%; padding: 0 5rem 5rem 5rem;">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

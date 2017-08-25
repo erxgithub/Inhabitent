@@ -4,8 +4,8 @@
  *
  * @package RED_Starter_Theme
  */
-echo "single-post.php".nl2br("\n");
-echo get_post_type().nl2br("\n");
+//echo "single-post.php".nl2br("\n");
+//echo get_post_type().nl2br("\n");
 
 get_header(); ?>
 

@@ -243,7 +243,7 @@ function theme_slug_widgets_init() {
 
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
 
-function fb_add_search_box ( $items, $args ) {
+function add_search_box ( $items, $args ) {
 	
 	// only on primary menu
 	if( 'primary' === $args -> theme_location )
@@ -252,23 +252,28 @@ function fb_add_search_box ( $items, $args ) {
 	return $items;
 }
 
-add_filter( 'wp_nav_menu_items', 'fb_add_search_box', 10, 2 );
+add_filter( 'wp_nav_menu_items', 'add_search_box', 10, 2 );
 
 function get_banner() {
-	if (is_front_page()) {
-		return 'class="banner-image-on" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('.get_bloginfo("url").'/wp-content/uploads/2017/08/home-hero.jpg'.') no-repeat center top; background-size: cover;"';
-	}
-	// elseif (is_page('about')) {
-	// 	return 'class="banner-image-on" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('.get_bloginfo("url").'/wp-content/uploads/2017/08/about-hero.jpg'.') no-repeat center bottom; background-size: cover;"';
-	// }
-	else if(get_field("banner") && !is_post_type_archive( 'adventures' )) {
-		if (is_page('about')) {
-			return 'class="banner-image-on" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('.get_field("banner").') no-repeat center bottom; background-size: cover;"';
+	if(get_field("banner") && !is_post_type_archive( 'adventures' ))
+	{
+		if (is_front_page())
+		{
+			$align = 'top';
+			$gradient = 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), ';
+		}
+		elseif (is_page('about'))
+		{
+			$align = 'bottom';
+			$gradient = 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), ';
 		}
 		else
 		{
-			return 'class="banner-image-on" style="background: url('.get_field("banner").') no-repeat center bottom; background-size: cover;"';
+			$align = 'bottom';
+			$gradient = '';
 		}
+
+		return 'class="banner-image-on" style="background: '.$gradient.'url('.get_field("banner").') no-repeat center '.$align.'; background-size: cover;"';
 	}
 	else
 	{

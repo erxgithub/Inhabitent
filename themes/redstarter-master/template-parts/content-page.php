@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-echo "content-page.php";
+//echo "content-page.php";
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

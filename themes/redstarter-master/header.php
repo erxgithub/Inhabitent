@@ -41,12 +41,15 @@
 							<div class="flex flex-column flex-justify-center flex-items-center" style="width: 30%;">
 								<?php echo get_banner_logo(); ?>
 							</div>
-							<div style="padding: 1rem 0 0 0; font-size: 1.25rem; width: 35%;">
+							<div class="flex" style="padding: 1rem 0 0 0; font-size: 1.25rem; width: 35%;">
 								<!-- <a href="<?php //echo get_home_url(); ?>">"> -->
 								<nav id="site-navigation" class="main-navigation" role="navigation">
 									<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 									<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 								</nav><!-- #site-navigation -->
+								<div class="search-toggle" style="padding: 0 6rem 0 0;">
+									<?php echo get_search_icon(); ?>
+								</div>
 							</div>
 						</div>
 						<!-- <div class="flex flex-justify-center" style="padding: 10rem 0 15rem 0;"> -->

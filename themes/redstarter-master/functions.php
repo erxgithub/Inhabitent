@@ -299,3 +299,13 @@ function get_banner_tent() {
 		return '<img src="'.get_bloginfo('template_url').'/assets/images/inhabitent-logo-tent.svg'.'" style="width: 4rem;"/>';
 	}
 }
+
+function get_search_icon() {
+	if (is_front_page() || (get_field("banner") && !is_post_type_archive( 'adventures' ))) {
+		return '<img src="'.get_bloginfo('template_url').'/assets/images/search-icon-png-white.png'.'" class="search-icon" style="width: 20px;"/>';
+	}
+	else
+	{
+		return '<img src="'.get_bloginfo('template_url').'/assets/images/search-icon-png-green.png'.'" class="search-icon" style="width: 20px;"/>';
+	}
+}

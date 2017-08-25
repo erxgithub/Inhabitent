@@ -421,7 +421,11 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  float: left;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -556,6 +560,9 @@ a {
 
 .footer-widget .widget_media_image img {
   width: 30rem; }
+
+.menu-item-search {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility

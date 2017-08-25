@@ -28,8 +28,9 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
-	//float: left;
+	display: flex;
+	justify-content: flex-start;
+	float: left;
 	width: 100%;
 
 	ul {
@@ -221,4 +222,21 @@ a {
 
 .footer-widget .widget_media_image img {
 	width: 30rem;
+}
+
+.menu-item-search {
+	display: none;
+	//position: absolute;
+	//right: 0;
+	//top: 37px;
+}
+
+.menu {
+	//display: flex;
+	//justify-content: flex-end;
+	//position: relative;
+}
+
+.search-icon {
+
 }

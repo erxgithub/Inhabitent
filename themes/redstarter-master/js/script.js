@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	$(".menu-item-134").click(function(){
+	$(".search-toggle").click(function(){
 		$(".menu-item-search").toggle();
 	});
 });

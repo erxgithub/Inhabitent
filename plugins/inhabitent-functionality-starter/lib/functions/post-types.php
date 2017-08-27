@@ -9,8 +9,6 @@
   * Create custom post type(s)
   */
 
- // register custom post types
-
 function get_post_args($custom_post_type) {
 	$labels = array(
 		'name'                  => _x( $custom_post_type, 'Post Type General Name', 'text_domain' ),

@@ -1,0 +1,377 @@
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+
+.banner-image-on .menu-item a {
+	color: white;
+}
+
+.banner-image-off .menu-item a {
+	color: rgb(45, 134, 112);
+}
+
+.banner-home {
+	width: 35%;
+	padding: 1rem 0 0 6rem;
+}
+
+.banner-logo {
+	width: 30%;
+}
+
+.banner-menu {
+	font-size: 1.25rem;
+	width: 35%;
+	padding: 1rem 0 0 0;
+}
+
+#primary-menu {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu-item {
+	padding: 0 1rem 0 1rem;
+}
+
+.menu-item a:hover {
+	text-decoration: underline;
+}
+
+.menu-item-search {
+	display: none;
+}
+
+.search-icon {
+	width: 24px;
+	margin-top: 5px;
+}
+
+.search-toggle {
+	padding: 0 6rem 0 0;
+}
+
+.shop-stuff-main {
+	font-size: 2.75rem;
+	text-align: center;
+	padding: 3rem 0 3rem 0;
+}
+
+.shop-stuff-archive {
+	font-size: 3rem;
+	text-align: center;
+	padding: 0.25rem 0 0.5rem 0;
+}
+
+.terms {
+	padding: 0 5rem 0 5rem;
+}
+
+.term-box {
+	width: 25%;
+	border-style: solid;
+	border-width: 6px 1px 1px 1px;
+	border-color: lightgrey;
+	margin: 0 1% 0 1%;
+	padding-bottom: 1.5rem;
+}
+
+.term-box a {
+	text-decoration: none;
+	color: black;
+}
+
+.term-image {
+	width: 5.5rem;
+	padding: 1rem 0 1rem 0;
+}
+
+.term-description {
+	font-family: Merriweather-Light;
+	font-size: 1.25rem;
+	line-height: 2.25rem;
+	text-align: center;
+	width: 85%;
+}
+
+.term-description p:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.term-button {
+	background-color: rgb(45, 134, 112);
+	color: white;
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.term-button p {
+	margin: 0;
+	padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.term-button p:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.terms-menu {
+	padding: 0 5rem 0 5rem;
+}
+
+.terms-menu-item {
+	text-align: center;
+	padding: 0 2.5rem 0 2.5rem;
+}
+
+.terms-menu-item a {
+	font-size: 1.5rem;
+	color: rgb(45, 134, 112);
+	text-decoration: none;
+}
+
+.terms-menu-item a:hover {
+	text-decoration: underline;
+	color: rgb(45, 134, 112);
+}
+
+.journal-heading {
+	font-size: 2.75rem;
+	text-align: center;
+	padding: 3rem 0 3rem 0;
+}
+
+.journal {
+	padding: 0 5rem 0 5rem;
+}
+
+.journal-box {
+	width: 33.3%;
+	margin: 0 1% 0 1%;
+}
+
+.journal-box a {
+	text-decoration: none;
+	color: black;
+}
+
+.journal-details {
+	border-style: solid;
+	border-width: 6px 1px 1px 1px;
+	border-color: lightgrey;
+	position: relative;
+	top: -0.5rem;
+	padding: 0 1rem 1rem 1rem;
+}
+
+.journal-date-comments {
+	font-family: Merriweather-Light;
+	font-size: 1rem;
+}
+
+.journal-date-comments p {
+	margin: 0;
+	padding: 1.5rem 0 0.5rem 0;
+}
+
+.journal-date-comments p:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.journal-title {
+	font-size: 1.75rem;
+	color: rgb(45, 134, 112);
+}
+
+.journal-title p {
+	line-height: 2.25rem;
+	margin: 0;
+	padding-bottom: 1.75rem;
+}
+
+.journal-title p:hover {
+	text-decoration: underline;
+	color: rgb(45, 134, 112);
+}
+
+.read-entry-button {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	font-size: 1.25rem;
+	color: black;
+	text-align: center;
+	width: 40%;
+}
+
+.read-entry-button p {
+	margin: 0;
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+.read-entry-button p:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.adventures-heading {
+	font-size: 2.75rem;
+	text-align: center;
+	padding: 3rem 0 3rem 0;
+}
+
+.adventures {
+	color: white;
+	padding-left: 4rem;
+}
+
+.adventures a {
+	text-decoration: none;
+	color: white;
+}
+
+.adventures p:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.adventure-title {
+	font-family: Merriweather-Light;
+}
+
+.adventure-box-half {
+	height: 44rem;
+	width: 92%; margin: 0;
+	padding: 0 2rem 0 2rem;
+}
+
+.adventure-box-half .adventure-title {
+	font-size: 3.75rem;
+	line-height: 5rem;
+	padding-bottom: 2rem;
+}
+
+.adventure-box-quarter {
+	height: 92%;
+	width: 88%;
+	margin: 0 0 2% 0;
+	padding: 1rem 2rem 0 2rem;
+}
+
+.adventure-box-quarter .adventure-title {
+	font-size: 3rem;
+	line-height: 3.75rem;
+	padding-bottom: 1rem;
+}
+
+.adventure-box-eighth {
+	width: 42%;
+	margin: 2% 4% 0 0;
+	padding: 1.5rem 2rem 0 2rem;
+}
+
+.adventure-box-eighth .adventure-title {
+	font-size: 2.25rem;
+	line-height: 2.75rem;
+}
+
+.read-more-button {
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	font-size: 1.25rem;
+	text-align: center;
+	width: 11rem;
+}
+
+.read-more-button p {
+	margin: 0;
+	padding: 0.75rem 0 0.75rem 0;
+}
+
+.more-adventures {
+	padding: 0 0 1rem 1rem;
+}
+
+.more-adventures-button {
+	background-color: rgb(45, 134, 112);
+	width: 18%;
+	text-align: center;
+	margin: 2rem 0 2rem 5rem;
+	padding: 0.75rem 0 0.75rem 0;
+}
+
+.more-adventures-button a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+}
+
+.more-adventures-button a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.contact a {
+	text-decoration: none;
+	color: white;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.footer-logo {
+	align-self: flex-end;
+	padding: 6rem 5rem 0 0;
+}
+
+.footer-widget .widget_custom_html {
+	width: 25%;
+}
+
+.footer-widget .widget_media_image {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.footer-widget .widget_media_image img {
+	width: 30rem;
+}
+
+.product-archive-border {
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-color: lightgrey;
+	margin: 4rem 6rem 4rem 6rem;
+}
+
+.product a {
+	color: black;
+	text-decoration: none;
+}
+
+.product a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.product-image {
+	margin: 0 1% 0 1%;
+}
+
+.product-box {
+	border-style: solid;
+	border-width: 6px 1px 1px 1px;
+	border-color: lightgrey;
+	font-family: Merriweather-Light;
+	font-size: 1.25rem;
+	margin: 0 1% 6% 1%;
+	padding: 0 1rem 0 1rem;
+	position: relative;
+	top: -0.5rem;
+}

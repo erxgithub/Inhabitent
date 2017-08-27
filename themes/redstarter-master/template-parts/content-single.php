@@ -14,7 +14,7 @@ if (get_post_type() == "adventures") {
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header" style="color: black;">
 		<?php
 			if (get_post_type() == 'post' || get_post_type() == 'products') {
  				if ( has_post_thumbnail() ) {
@@ -32,7 +32,7 @@ if (get_post_type() == "adventures") {
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-	<div class="entry-content" style="font-size: 1.5rem;">
+	<div class="entry-content" style="font-size: 1.5rem; color: black;">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

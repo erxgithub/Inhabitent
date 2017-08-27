@@ -9,8 +9,6 @@
   * Create custom Taxonomy(ies)
   */
 
- // register custom taxonomy
-
 function get_tax_args($custom_tax) {
 	$labels = array(
 		'name'                       => _x( $custom_tax, 'Taxonomy General Name', 'text_domain' ),

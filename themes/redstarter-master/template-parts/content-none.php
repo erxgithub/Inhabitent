@@ -4,6 +4,8 @@
  *
  * @package RED_Starter_Theme
  */
+//echo "content-none.php".nl2br("\n");
+//echo get_post_type().nl2br("\n");
 
 ?>
 

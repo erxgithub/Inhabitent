@@ -1,5 +1,7 @@
 <?php
 
+ // register custom post types and taxonomies
+
 function register_post_info() {
 	$a = array(
 		"Adventures" => "",

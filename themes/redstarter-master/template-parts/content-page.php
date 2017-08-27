@@ -4,7 +4,8 @@
  *
  * @package RED_Starter_Theme
  */
-//echo "content-page.php";
+//echo "content-page.php".nl2br("\n");
+//echo get_post_type().nl2br("\n");
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

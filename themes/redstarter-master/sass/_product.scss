@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+# Custom - Product
+--------------------------------------------------------------*/
+
+.product {
+	margin: 0 6rem 0 6rem;
+	padding-top: 2rem;
+}
+
+.product-archive-border {
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-color: lightgrey;
+	margin: 4rem 6rem 4rem 6rem;
+}
+
+.product-image-square {
+	margin: 0 1% 0 1%;
+}
+
+.product-image-large {
+	width: 50%;
+}
+
+.product-image-large img {
+	width: 95%;
+}
+
+.product-detail {
+	width: 50%;
+	padding-bottom: 10rem;
+}
+
+.product-detail h1 {
+	font-size: 3rem;
+	color: orange;
+	margin: 0;
+}
+
+.product-detail h3 {
+	font-family: Merriweather-Light;
+	font-size: 1.75rem;
+	margin: 0;
+	padding: 1rem 0 1rem 0;
+}
+
+.product-detail p {
+	font-family: Merriweather-Light;
+	font-size: 1.25rem;
+	line-height: 180%;
+	color: black;
+	padding-bottom: 2rem;
+}
+
+.product-box a {
+	color: black;
+	text-decoration: none;
+}
+
+.product-box a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.product-price-box {
+	border-style: solid;
+	border-width: 6px 1px 1px 1px;
+	border-color: lightgrey;
+	font-family: Merriweather-Light;
+	font-size: 1.25rem;
+	margin: 0 1% 6% 1%;
+	padding: 0 1rem 0 1rem;
+	position: relative;
+	top: -0.5rem;
+}
+
+.shop-stuff-main {
+	font-size: 2.75rem;
+	text-align: center;
+	padding: 3rem 0 3rem 0;
+}
+
+.shop-stuff-archive {
+	font-size: 3rem;
+	text-align: center;
+	padding: 0.25rem 0 0.5rem 0;
+}

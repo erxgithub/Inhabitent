@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-echo "content-page.php".nl2br("\n");
+//echo "content-page.php".nl2br("\n");
 //echo get_post_type().nl2br("\n");
 
 ?>
@@ -14,8 +14,6 @@ echo "content-page.php".nl2br("\n");
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<h2><?php //echo "title1".nl2br("\n"); ?></h2>
-
 		<?php the_content(); ?>
 
 		<?php

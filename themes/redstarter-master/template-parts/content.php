@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-echo "content.php".nl2br("\n");
+//echo "content.php".nl2br("\n");
 
 ?>
 

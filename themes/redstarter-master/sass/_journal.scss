@@ -1,0 +1,178 @@
+/*--------------------------------------------------------------
+# Custom - Journal
+--------------------------------------------------------------*/
+
+.journal-heading {
+	font-size: 2.75rem;
+	text-align: center;
+	padding: 3rem 0 3rem 0;
+}
+
+.journal {
+	padding: 0 5rem 0 5rem;
+}
+
+.journal-box {
+	width: 33.3%;
+	margin: 0 1% 0 1%;
+}
+
+.journal-box a {
+	text-decoration: none;
+	color: black;
+}
+
+.journal-details {
+	border-style: solid;
+	border-width: 6px 1px 1px 1px;
+	border-color: lightgrey;
+	position: relative;
+	top: -0.5rem;
+	padding: 0 1rem 1rem 1rem;
+}
+
+.journal-date-comments {
+	font-family: Merriweather-Light;
+	font-size: 1rem;
+}
+
+.journal-date-comments p {
+	margin: 0;
+	padding: 1.5rem 0 0.5rem 0;
+}
+
+.journal-date-comments p:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.journal-title {
+	font-size: 1.75rem;
+	color: rgb(45, 134, 112);
+}
+
+.journal-title p {
+	line-height: 2.25rem;
+	margin: 0;
+	padding-bottom: 1.75rem;
+}
+
+.journal-title p:hover {
+	text-decoration: underline;
+	color: rgb(45, 134, 112);
+}
+
+.read-entry-button {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	font-size: 1.25rem;
+	color: black;
+	text-align: center;
+	width: 40%;
+}
+
+.read-entry-button p {
+	margin: 0;
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+.read-entry-button p:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.journal-post {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: lightgrey;
+	width: 65%;
+	margin: 0 0 0 6rem;
+	padding-top: 3rem;
+}
+
+.journal-entry {
+	color: black;
+}
+
+.journal-image {
+	margin-right: 5rem;
+}
+
+.journal-image-box {
+	height: 42rem;
+}
+
+.journal-image-box h1 {
+	font-size: 2.75rem;
+	background-color: rgb(45, 134, 112);
+	color: white;
+	padding: 0.5rem 2rem 0.5rem 2rem;
+	width: 75%;
+}
+
+.journal-image-box h3 {
+	font-size: 1.25rem;
+	background-color: rgb(45, 134, 112);
+	color: white;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	text-align: right;
+	margin: 0;
+}
+
+.journal-image-box a {
+	text-decoration: none;
+	color: white;
+}
+
+.journal-image-box a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.journal-content {
+	font-family: Merriweather-Light;
+	font-size: 1.25rem;
+	line-height: 2.25rem;
+	color: black;
+	margin-top: 2rem;
+	margin-right: 5rem;
+}
+
+.journal-post .read-entry {
+	padding: 3rem 0 7rem 0;
+}
+
+.read-more-journal {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	font-size: 1.25rem;
+	color: black;
+	text-align: center;
+	width: 20%;
+	margin-bottom: 5rem;
+}
+
+.read-more-journal a {
+	color: black;
+	text-decoration: none;
+}
+
+.read-more-journal a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.read-more-journal p {
+	margin: 0;
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+.read-entry a {
+	text-decoration: none;
+}
+
+.read-entry a:hover {
+	text-decoration: underline;
+}

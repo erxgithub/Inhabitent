@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-echo "content-adventure.php".nl2br("\n");
+//echo "content-adventure.php".nl2br("\n");
 
 ?>
 

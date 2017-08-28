@@ -6,15 +6,20 @@
  *
  * @package RED_Starter_Theme
  */
+//echo "404.php".nl2br("\n");
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<hr class="horizontal-line">
+
+<div class="flex">
+
+	<div id="primary" class="content-area section-404">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					<h2 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h2>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
@@ -51,5 +56,13 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div id="sidebar2" class="flex flex-column sidebar-widget" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			</div>
+		<?php endif; ?>
+
+</div>
 
 <?php get_footer(); ?>

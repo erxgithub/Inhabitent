@@ -727,7 +727,7 @@ object {
       align-self: center; }
 
 /*--------------------------------------------------------------
-# Custom
+# Custom - Main
 --------------------------------------------------------------*/
 .banner-image-on .menu-item a {
   color: white; }
@@ -769,16 +769,48 @@ object {
 .search-toggle {
   padding: 0 6rem 0 0; }
 
-.shop-stuff-main {
-  font-size: 2.75rem;
-  text-align: center;
-  padding: 3rem 0 3rem 0; }
+.horizontal-line {
+  margin: 0.5rem 0 0 0; }
 
-.shop-stuff-archive {
+.about-section {
+  font-family: Merriweather-Light;
+  margin: 0 20% 0 20%;
+  padding-bottom: 5rem; }
+
+.about-section .entry-content h2 {
+  font-family: sans-serif;
   font-size: 3rem;
-  text-align: center;
-  padding: 0.25rem 0 0.5rem 0; }
+  text-align: center; }
 
+.about-section .entry-content p {
+  font-size: 1.25rem; }
+
+.contact-section {
+  font-family: Merriweather-Light;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: lightgrey;
+  width: 83%;
+  margin: 0;
+  padding: 3rem 5rem 5rem 6rem; }
+
+.contact-section h2 {
+  font-family: sans-serif;
+  font-size: 3rem; }
+
+.contact-section .entry-content h2 {
+  font-family: sans-serif;
+  font-size: 2.5rem; }
+
+.contact-section .entry-content p {
+  font-size: 1.25rem; }
+
+.contact-post .read-entry {
+  padding: 3rem 0 7rem 0; }
+
+/*--------------------------------------------------------------
+# Custom - Terms
+--------------------------------------------------------------*/
 .terms {
   padding: 0 5rem 0 5rem; }
 
@@ -839,6 +871,82 @@ object {
   text-decoration: underline;
   color: #2d8670; }
 
+/*--------------------------------------------------------------
+# Custom - Product
+--------------------------------------------------------------*/
+.product {
+  margin: 0 6rem 0 6rem;
+  padding-top: 2rem; }
+
+.product-archive-border {
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-color: lightgrey;
+  margin: 4rem 6rem 4rem 6rem; }
+
+.product-image-square {
+  margin: 0 1% 0 1%; }
+
+.product-image-large {
+  width: 50%; }
+
+.product-image-large img {
+  width: 95%; }
+
+.product-detail {
+  width: 50%;
+  padding-bottom: 10rem; }
+
+.product-detail h1 {
+  font-size: 3rem;
+  color: orange;
+  margin: 0; }
+
+.product-detail h3 {
+  font-family: Merriweather-Light;
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 1rem 0 1rem 0; }
+
+.product-detail p {
+  font-family: Merriweather-Light;
+  font-size: 1.25rem;
+  line-height: 180%;
+  color: black;
+  padding-bottom: 2rem; }
+
+.product-box a {
+  color: black;
+  text-decoration: none; }
+
+.product-box a:hover {
+  color: black;
+  text-decoration: underline; }
+
+.product-price-box {
+  border-style: solid;
+  border-width: 6px 1px 1px 1px;
+  border-color: lightgrey;
+  font-family: Merriweather-Light;
+  font-size: 1.25rem;
+  margin: 0 1% 6% 1%;
+  padding: 0 1rem 0 1rem;
+  position: relative;
+  top: -0.5rem; }
+
+.shop-stuff-main {
+  font-size: 2.75rem;
+  text-align: center;
+  padding: 3rem 0 3rem 0; }
+
+.shop-stuff-archive {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.25rem 0 0.5rem 0; }
+
+/*--------------------------------------------------------------
+# Custom - Journal
+--------------------------------------------------------------*/
 .journal-heading {
   font-size: 2.75rem;
   text-align: center;
@@ -978,14 +1086,28 @@ object {
   margin: 0;
   padding: 0.5rem 0 0.5rem 0; }
 
+.read-entry a {
+  text-decoration: none; }
+
+.read-entry a:hover {
+  text-decoration: underline; }
+
+/*--------------------------------------------------------------
+# Custom - Adventures
+--------------------------------------------------------------*/
 .adventures-heading {
   font-size: 2.75rem;
   text-align: center;
   padding: 3rem 0 3rem 0; }
 
 .adventures {
+  width: 100%;
   color: white;
-  padding-left: 4rem; }
+  padding: 0 4rem 5rem 4rem; }
+
+.adventures-column {
+  width: 50%;
+  margin: 0 0 0 0; }
 
 .adventures a {
   text-decoration: none;
@@ -1033,7 +1155,7 @@ object {
   height: 86%;
   width: 94%;
   margin: 2%;
-  padding: 3rem 10rem 0 2rem; }
+  padding: 3rem 10rem 16rem 2rem; }
 
 .adventure-archive-box .adventure-title {
   font-size: 3.5rem;
@@ -1108,6 +1230,73 @@ object {
   border-color: lightgrey;
   margin: 1rem 6rem 4rem 6rem; }
 
+/*--------------------------------------------------------------
+# Custom - Search
+--------------------------------------------------------------*/
+.search-section {
+  font-family: Merriweather-Light;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: lightgrey;
+  width: 83%;
+  margin: 0;
+  padding: 3rem 5rem 5rem 6rem; }
+
+.search-section h2 {
+  font-family: sans-serif;
+  font-size: 2.5rem; }
+
+.search-section p {
+  font-size: 1.25rem;
+  line-height: 2.25rem; }
+
+.search-section a {
+  color: #2d8670;
+  text-decoration: none; }
+
+.search-section .read-more-journal {
+  font-family: sans-serif; }
+
+.search-section .read-more-journal a {
+  color: black;
+  text-decoration: none; }
+
+.search-section .read-more-journal a:hover {
+  color: black;
+  text-decoration: underline; }
+
+.search-section a:hover {
+  color: #2d8670;
+  text-decoration: underline; }
+
+.search-section p:hover {
+  color: black;
+  text-decoration: none; }
+
+.search-section .adventures {
+  color: black;
+  padding: 0; }
+
+.section-404 {
+  font-family: Merriweather-Light;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: lightgrey;
+  width: 83%;
+  margin: 0;
+  padding: 3rem 5rem 5rem 6rem; }
+
+.section-404 h2 {
+  font-family: sans-serif;
+  font-size: 2.5rem; }
+
+.section-404 p {
+  font-size: 1.25rem;
+  line-height: 2.25rem; }
+
+/*--------------------------------------------------------------
+# Custom - Footer
+--------------------------------------------------------------*/
 .footer-widget {
   font-family: Merriweather-Light; }
 
@@ -1183,6 +1372,9 @@ object {
   text-align: center;
   padding: 3rem 0 1rem 0; }
 
+/*--------------------------------------------------------------
+# Custom - Sidebar
+--------------------------------------------------------------*/
 .sidebar-widget {
   font-family: Merriweather-Light;
   width: 35%;
@@ -1251,108 +1443,3 @@ object {
 .sidebar-widget .widget_archive a {
   font-size: 1.25rem;
   line-height: 2.25rem; }
-
-.product {
-  margin: 0 6rem 0 6rem;
-  padding-top: 2rem; }
-
-.product-archive-border {
-  border-bottom-style: dashed;
-  border-bottom-width: 1px;
-  border-color: lightgrey;
-  margin: 4rem 6rem 4rem 6rem; }
-
-.product-image-square {
-  margin: 0 1% 0 1%; }
-
-.product-image-large {
-  width: 50%; }
-
-.product-image-large img {
-  width: 95%; }
-
-.product-detail {
-  width: 50%;
-  padding-bottom: 10rem; }
-
-.product-detail h1 {
-  font-size: 3rem;
-  color: orange;
-  margin: 0; }
-
-.product-detail h3 {
-  font-family: Merriweather-Light;
-  font-size: 1.75rem;
-  margin: 0;
-  padding: 1rem 0 1rem 0; }
-
-.product-detail p {
-  font-family: Merriweather-Light;
-  font-size: 1.25rem;
-  line-height: 180%;
-  color: black;
-  padding-bottom: 2rem; }
-
-.product-box a {
-  color: black;
-  text-decoration: none; }
-
-.product-box a:hover {
-  color: black;
-  text-decoration: underline; }
-
-.product-price-box {
-  border-style: solid;
-  border-width: 6px 1px 1px 1px;
-  border-color: lightgrey;
-  font-family: Merriweather-Light;
-  font-size: 1.25rem;
-  margin: 0 1% 6% 1%;
-  padding: 0 1rem 0 1rem;
-  position: relative;
-  top: -0.5rem; }
-
-.read-entry a {
-  text-decoration: none; }
-
-.read-entry a:hover {
-  text-decoration: underline; }
-
-.horizontal-line {
-  margin: 0.5rem 0 0 0; }
-
-.about-section {
-  font-family: Merriweather-Light;
-  margin: 0 20% 0 20%;
-  padding-bottom: 5rem; }
-
-.about-section .entry-content h2 {
-  font-family: sans-serif;
-  font-size: 3rem;
-  text-align: center; }
-
-.about-section .entry-content p {
-  font-size: 1.25rem; }
-
-.contact-section {
-  font-family: Merriweather-Light;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: lightgrey;
-  width: 83%;
-  margin: 0;
-  padding: 3rem 5rem 5rem 6rem; }
-
-.contact-section h2 {
-  font-family: sans-serif;
-  font-size: 3rem; }
-
-.contact-section .entry-content h2 {
-  font-family: sans-serif;
-  font-size: 2.5rem; }
-
-.contact-section .entry-content p {
-  font-size: 1.25rem; }
-
-.contact-post .read-entry {
-  padding: 3rem 0 7rem 0; }

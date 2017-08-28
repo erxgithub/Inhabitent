@@ -47,8 +47,6 @@ if ( $count > 0 ) {
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header" style="text-align: center;">
-			</header><!-- .page-header -->
 		<div class="flex flex-wrap" style="width: 100%; padding: 0 5rem 5rem 5rem;">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

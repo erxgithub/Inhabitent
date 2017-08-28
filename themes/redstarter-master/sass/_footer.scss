@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------
+# Custom - Footer
+--------------------------------------------------------------*/
+
+// custom footer widget
+
+.footer-widget {
+	font-family: Merriweather-Light;
+}
+
+.footer-widget .contact {
+	padding-top: 4rem;
+}
+
+.footer-widget .contact ul {
+	list-style-type: none;
+	color: white;
+	font-size: 1.25rem;
+	line-height: 3rem;
+}
+
+.footer-widget .contact ul li:nth-child(1) {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 3px;
+	color: orange;
+}
+
+.footer-widget .contact ul li:nth-child(2) a {
+	padding-left: 1rem;
+}
+
+.footer-widget .contact ul li:nth-child(3) span {
+	padding-left: 1rem;
+}
+
+.footer-widget .contact ul li:nth-child(4) {
+	word-spacing: 1rem;
+}
+
+.footer-widget .contact a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-widget .contact a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.footer-widget .business-hours {
+	padding-top: 4rem;
+}
+
+.footer-widget .business-hours ul {
+	list-style-type: none;
+	color: white;
+	font-size: 1.25rem;
+	line-height: 3rem;
+	margin: 0;
+}
+
+.footer-widget .business-hours ul li:nth-child(1) {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 3px;
+	color: orange;
+}
+
+.footer-logo {
+	align-self: flex-end;
+	padding: 6rem 5rem 0 0;
+}
+
+.footer-widget .widget_custom_html {
+	width: 25%;
+}
+
+.footer-widget .widget_media_image {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.footer-widget .widget_media_image img {
+	width: 30rem;
+}
+
+.copyright {
+	font-size: 1.25rem;
+	color: white;
+	text-align: center;
+	padding: 3rem 0 1rem 0;
+}

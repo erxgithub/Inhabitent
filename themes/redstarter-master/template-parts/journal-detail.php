@@ -4,8 +4,8 @@
  *
  * @package RED_Starter_Theme
  */
-echo "journal-detail.php".nl2br("\n");
-echo get_post_type().nl2br("\n");
+//echo "journal-detail.php".nl2br("\n");
+//echo get_post_type().nl2br("\n");
 
 if (get_post_type() == "adventures") {
 	//get_sidebar();

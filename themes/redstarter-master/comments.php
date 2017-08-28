@@ -14,8 +14,8 @@ if ( post_password_required() ) {
 	return;
 }
 
-echo "comments.php".nl2br("\n");
-echo get_post_type().nl2br("\n");
+//echo "comments.php".nl2br("\n");
+//echo get_post_type().nl2br("\n");
 
 ?>
 

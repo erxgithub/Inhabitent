@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------
+# Custom - Sidebar
+--------------------------------------------------------------*/
+
+// custom sidebar widget
+
+.sidebar-widget {
+	font-family: Merriweather-Light;
+	width: 35%;
+	list-style-type: none;
+	padding: 6rem 0 0 5rem;
+}
+
+.sidebar-widget ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-widget .contact ul {
+	font-size: 1.25rem;
+	line-height: 3rem;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-widget .contact ul li:nth-child(1) {
+	font-family: sans-serif;
+	font-size: 1.75rem;
+	letter-spacing: 3px;
+	padding-bottom: 2rem;
+}
+
+.sidebar-widget .contact ul li:nth-child(2) span {
+	color: rgb(45, 134, 112);
+}
+
+.sidebar-widget .contact ul li:nth-child(2) span {
+	padding-left: 1rem;
+}
+
+.sidebar-widget .contact ul li:nth-child(3) a {
+	padding-left: 1rem;
+}
+
+.sidebar-widget .contact ul li:nth-child(4) span {
+	padding-left: 1rem;
+}
+
+.sidebar-widget .contact ul li:nth-child(5) {
+	line-height: 1.5rem;
+}
+
+.sidebar-widget .contact ul li:nth-child(5) span {
+	padding-left: 1.75rem;
+}
+
+.sidebar-widget .business-hours ul {
+	font-size: 1.25rem;
+	line-height: 3rem;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-widget .business-hours ul li:nth-child(1) {
+	font-family: sans-serif;
+	font-size: 1.75rem;
+	letter-spacing: 3px;
+	padding: 4rem 0 2rem 0;
+}
+
+.sidebar-widget h2 {
+	font-family: sans-serif;
+	font-size: 1.75rem;
+	letter-spacing: 3px;
+}
+
+.sidebar-widget a {
+	color: rgb(45, 134, 112);
+	text-decoration: none;
+}
+
+.sidebar-widget a:hover {
+	text-decoration: underline;
+}
+
+.sidebar-widget .widget_archive a {
+	font-size: 1.25rem;
+	line-height: 2.25rem;
+}

@@ -9,19 +9,29 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+<hr class="horizontal-line">
+
+<div class="flex">
+
+	<div id="primary" class="content-area search-section">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+			<div class="page-header">
+				<h2 class="page-title"><?php printf( esc_html( 'SEARCH RESULTS FOR: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
+			</div><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
+
+				<div class="read-more-journal">
+					<a href="<?php the_permalink(); ?>">
+						<p>READ MORE&nbsp;&rarr;</p>
+					</a>
+				</div>
 
 			<?php endwhile; ?>
 
@@ -34,7 +44,15 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
+	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div id="sidebar2" class="flex flex-column sidebar-widget" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-2' ); ?>
+		</div>
+	<?php endif; ?>
+
+</div>
+
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

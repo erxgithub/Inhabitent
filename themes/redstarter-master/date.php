@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-//echo "home.php".nl2br("\n");
+//echo "date.php".nl2br("\n");
 //echo get_post_type().nl2br("\n");
 
 get_header(); ?>
@@ -13,6 +13,8 @@ get_header(); ?>
 	<div class="flex">
 		<div id="primary" class="content-area journal-post">
 			<main id="main" class="site-main" role="main">
+
+				<h1 style="font-size: 3rem;"><b><?php echo str_replace(": ","",get_the_archive_title()); ?></b></h1>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

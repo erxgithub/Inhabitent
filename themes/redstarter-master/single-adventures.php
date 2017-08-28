@@ -4,19 +4,19 @@
  *
  * @package RED_Starter_Theme
  */
-//echo "single-adventures.php".nl2br("\n");
+echo "single-adventures.php".nl2br("\n");
 //echo get_post_type().nl2br("\n");
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main" style="margin: 0 20% 0 20%;">
+	<div id="primary" class="content-area adventure-post">
+		<main id="main" class="site-main" role="main" style="margin: 0 15% 0 15%;">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/adventure', 'detail' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<?php //the_post_navigation(); ?>
 
 			<?php
 				if (get_post_type() == "post") {
@@ -29,7 +29,7 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
-		<div class="read-entry" style="padding: 0 0 7rem 0;">
+		<div class="read-entry">
 			<a href="http://www.facebook.com" style="border-style: solid; border-width: 1px; border-color: black; padding: 1rem 2rem 1rem 2rem; color: black;"><i class="fa fa-facebook" aria-hidden="true" style="padding-right: 0.5rem;"></i>LIKE</a>
 			<a href="http://www.twitter.com" style="border-style: solid; border-width: 1px; border-color: black; padding: 1rem 2rem 1rem 2rem; color: black;"><i class="fa fa-twitter" aria-hidden="true" style="padding-right: 0.5rem;"></i>TWEET</a>
 			<a href="http://www.pinterest.com" style="border-style: solid; border-width: 1px; border-color: black; padding: 1rem 2rem 1rem 2rem; color: black;"><i class="fa fa-pinterest" aria-hidden="true" style="padding-right: 0.5rem;"></i>PIN</a>

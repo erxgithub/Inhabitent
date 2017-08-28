@@ -4,12 +4,12 @@
  *
  * @package RED_Starter_Theme
  */
-echo "content.php".nl2br("\n");
+//echo "content-product.php".nl2br("\n");
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header product">
+	<header class="entry-header product-box">
 
 		<a href="<?php the_permalink(); ?>">
 			<div class="product-image-square">
@@ -19,7 +19,7 @@ echo "content.php".nl2br("\n");
 				}
 				?>
 			</div>
-			<div class="product-box">
+			<div class="product-price-box">
 				<p><span><?php echo str_pad(get_the_title(), 20, '.'); ?></span><span><?php echo '$'.number_format(get_field('price'), 2, '.', ','); ?></span></p>
 			</div>
 		</a>

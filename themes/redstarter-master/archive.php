@@ -4,6 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
+//echo "archive.php".nl2br("\n");
 
 get_header(); ?>
 
@@ -29,7 +30,8 @@ get_header(); ?>
 
 		<div class="flex flex-column flex-items-center" style="width: 23%; margin: 0 1% 0 1%;">
 				<?php
-					get_template_part( 'template-parts/content' );
+					//get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content', 'product' );
 				?>
 		</div>
 			<?php endwhile; ?>

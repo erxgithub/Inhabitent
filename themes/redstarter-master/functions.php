@@ -119,16 +119,26 @@ function theme_slug_widgets_init() {
 	'before_title'  => '<h2 class="widgettitle">',
 	'after_title'   => '</h2>',
     ) );
+
+	register_sidebar( array(
+        'name' => __( 'Sidebar-2', 'wps' ),
+        'id' => 'sidebar-2',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>',
+    ) );
 }
 
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
 
 function add_search_box ( $items, $args ) {
-	
+
 	// only on primary menu
 	if( 'primary' === $args -> theme_location )
 		$items .= '<li class="menu-item menu-item-search">' . get_search_form( FALSE ) . '</li>';
-	
+
 	return $items;
 }
 

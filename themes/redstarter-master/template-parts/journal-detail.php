@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-echo "content-single.php".nl2br("\n");
+echo "journal-detail.php".nl2br("\n");
 echo get_post_type().nl2br("\n");
 
 if (get_post_type() == "adventures") {
@@ -39,8 +39,7 @@ if (get_post_type() == "adventures") {
 	</header><!-- .entry-header -->
 
 	<div class="entry-content journal-content">
-		<?php //echo '<p>'.strip_tags(get_the_content()).'</p>'; ?>
-		<?php echo '<p>'.strip_tags(get_the_excerpt()).'</p>'; ?>
+		<?php echo '<p>'.strip_tags(get_the_content()).'</p>'; ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
@@ -50,6 +49,6 @@ if (get_post_type() == "adventures") {
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php //red_starter_entry_footer(); ?>
+		<?php red_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
